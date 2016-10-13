@@ -1,0 +1,42 @@
+.container {
+    max-width: 50rem;
+}
+
+body {
+    background-image: url("assets/img/bg_paper.png");
+}
+
+
+
+/*** main content ***/
+col-sm-9 > h4 {
+    border-bottom: 2px solid #cccccc;
+    line-height: 45px;
+}
+
+/*** connect with me content ***/
+.panel img{
+  float: left;
+  padding-right: 15px;
+}
+.col-sm-3 img {
+    width: 51px;
+    padding: 1px;
+}
+
+/*** Contact.html page ***/
+input#form-nm,input#form-eml, textarea {
+    width: 100%;
+}
+textarea{
+	min-height:150px;
+}
+form input#submit-btn,
+form input#reset-btn{
+	width:auto;
+	color: white;
+	background-color: #4AAAA5;
+	border: 0px;
+	padding: 5px;
+	font-size: 17px;
+}
