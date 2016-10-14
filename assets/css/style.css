@@ -76,11 +76,8 @@ col-sm-9 > h4 {
 }
 
 /*** Contact.html page ***/
-input#form-nm,input#form-eml, textarea {
+input#form-nm,input#form-eml {
     width: 100%;
-}
-textarea{
-	min-height:150px;
 }
 form input#submit-btn,
 form input#reset-btn{
@@ -92,6 +89,9 @@ form input#reset-btn{
 	font-size: 17px;
 }
 
+#message{
+  width:100%;
+}
 /*** portfolio.html page ***/
 /*span {
     background-color: #4AAAA5;
@@ -197,6 +197,11 @@ form input#reset-btn{
   .col-fifty-fifty a span{
     margin-left: 79px;
   }
+  .container{
+    text-align: center;}
+  h1,h2,h3,h4,p,form{
+    text-align: left;
+  }
 }
 
 /* phones (landscape): 640 px width*/
@@ -241,6 +246,6 @@ form input#reset-btn{
     text-align: left;
   }
   .col-fifty-fifty a span{
-    margin-left: 24px;
+    margin-left: 41px;
   }
 }
