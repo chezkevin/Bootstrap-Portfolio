@@ -1,17 +1,68 @@
 .container {
     max-width: 50rem;
 }
-
+.header{
+  padding-bottom:0rem;
+}
 body {
-    background-image: url("assets/img/bg_paper.png");
+    background-image: url("../../assets/img/bg_paper.png");
+    padding: 0;
 }
 
+.col-sm-9,.col-sm-3,.header{
+  background-color: white;
+  border:2px solid #CCCCCC;
+}
+.col-sm-9{
+  width: 67%;
+  padding:3%;
+}
+.col-sm-3 {
+    width: 28%;
+    padding: 2%;
+    margin-left: 5%;
+}
+
+/*** letter head ***/
+.header{
+  background-color:white;
+  min-height: 70px;
+}
+.header.clearfix{
+  margin-bottom:0px;
+}
+
+.kevin-name {
+    width: 50%;
+    float:left;
+    margin-top: 11px;
+}
+.kevin-name a{
+  background-color: #4AAAA5;
+  color: white;
+  margin-left:20px;
+  padding:13px;
+  font-size: 30px;
+}
+.quick-links{
+  width:33%;
+  float: left;
+  margin-top: 18px;
+}
+.quick-links a {
+    padding-right: 20px;
+    padding-left: 20px;
+}
 
 
 /*** main content ***/
 col-sm-9 > h4 {
     border-bottom: 2px solid #cccccc;
     line-height: 45px;
+}
+.h4, h4 {
+    border-bottom: 2px solid #DDDDDD;
+    padding-bottom: 2%;
 }
 
 /*** connect with me content ***/
@@ -20,7 +71,7 @@ col-sm-9 > h4 {
   padding-right: 15px;
 }
 .col-sm-3 img {
-    width: 51px;
+    width: 57px;
     padding: 1px;
 }
 
@@ -39,4 +90,157 @@ form input#reset-btn{
 	border: 0px;
 	padding: 5px;
 	font-size: 17px;
+}
+
+/*** portfolio.html page ***/
+/*span {
+    background-color: #4AAAA5;
+    color: white;
+    position: absolute;
+    top: 140px;
+    padding: 10px;
+    width: 94%;
+    text-align: center;
+}
+
+.col-sm-4 {
+    position: relative;
+}
+.col-sm-4 img {
+    padding-bottom:30px;
+}*/
+
+.col-fifty-fifty a span{
+  position: absolute;
+  background-color: #4AAAA5;
+  color: white;
+  width: auto;
+  padding: 10px;
+  display: block;
+  margin-top: -110px;
+  margin-left: 26px;
+  width: 180px;
+  text-align: center;
+}
+
+.col-fifty-fifty a img{
+  display: block;
+  margin: auto;
+  padding-bottom: 45px;
+}
+
+.col-fifty-fifty {
+  float: left;
+  width: 50%;
+}
+
+/*** footer ***/
+.footer p {
+    text-align: center;
+    background-color: #666666;
+    color: white;
+    height: 65px;
+    padding: 15px;
+    border-top: 5px solid #4aaaa5;
+}
+.footer{
+  padding-top:0rem;
+}
+
+/*** Responsive css ***/
+/* desktop of 980px css*/
+@media only screen and (max-width: 980px){
+  .kevin-name a{
+    font-size: 40px;
+  }
+  .letter-head{
+    height: 75px;
+    font-weight: bold;
+  }
+  .header{
+    height:84px;
+  }
+  .quick-links{
+    margin-top: 0px;
+  }
+  .quick-links a{
+    line-height: 85px;
+    font-size: 22px;
+  }
+  p{
+    line-height: 27px;
+  }
+
+/*tablets: 768 px width*/
+@media only screen and (max-width: 768px){
+  .header{
+    height:83px;
+  }
+  .kevin-name {
+      width: 42%;
+  }
+  .kevin-name a{
+    margin-left: 0px;
+    line-height: 58px;
+  }
+  .quick-links{
+    margin-top: 0px;
+  }
+  .col-sm-9{
+    width:100%;
+  }
+  .col-sm-3{
+    margin:10px 0px 0px 0px;
+    padding: 3%;
+    width: 100%;
+  }
+  .col-fifty-fifty a span{
+    margin-left: 79px;
+  }
+}
+
+/* phones (landscape): 640 px width*/
+@media only screen and (max-width: 640px){
+  .letter-head{
+    position: static;
+  }
+  .letter-head {
+      height: 140px;
+  }
+  .kevin-name, .panel img, .col-sm-9,.col-sm-3{
+    width: 100%;
+  }
+  .kevin-name a{
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .col-sm-3{
+    margin:10px 0px 0px 0px;
+    padding: 3%;
+  }
+  form{
+    text-align: left;
+  }
+
+  /*these below two properties center the name*/
+  .container, .footer p{
+    text-align: center;
+  }
+  .kevin-name{
+    background-color: #4AAAA5;
+    display:inline-block;
+  }
+  .quick-links{
+    width: 100%;
+    margin-top: 0px;
+  }
+  .quick-links a{
+    padding: 0px 30px 0px 30px;
+  }
+  h1,h2,h3,h4,p{
+    text-align: left;
+  }
+  .col-fifty-fifty a span{
+    margin-left: 24px;
+  }
 }
